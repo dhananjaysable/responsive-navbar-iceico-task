@@ -40,7 +40,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             className="flex-shrink-0 text-white font-bold text-2xl"
           >
-            <Link to="/" className="flex items-center">
+            <Link to="responsive-navbar-iceico-task/" className="flex items-center">
               <span className="mr-2">🚀</span>
               TechSolutions
             </Link>

@@ -8,17 +8,17 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const links = [
-    { path: '/', name: 'Home' },
-    { path: '/about', name: 'About' },
+    { path: 'responsive-navbar-iceico-task/', name: 'Home' },
+    { path: 'responsive-navbar-iceico-task/about', name: 'About' },
     { 
       name: 'Services',
       subLinks: [
-        { path: '/web-dev', name: 'Web Development' },
-        { path: '/mobile-dev', name: 'Mobile Development' },
-        { path: '/cloud', name: 'Cloud Services' },
+        { path: 'responsive-navbar-iceico-task/web-dev', name: 'Web Development' },
+        { path: 'responsive-navbar-iceico-task/mobile-dev', name: 'Mobile Development' },
+        { path: 'responsive-navbar-iceico-task/cloud', name: 'Cloud Services' },
       ]
     },
-    { path: '/contact', name: 'Contact' },
+    { path: 'responsive-navbar-iceico-task/contact', name: 'Contact' },
   ];
 
   const toggleMobileMenu = () => {

@@ -1,21 +1,26 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-/* filepath: /D:/ICEICO Tasks/React JS/Responsive Navbar/src/index.css */
+
 body {
   overflow-x: hidden;
 }
-h1{
+
+h1 {
   text-align: center;
   font-size: 40px;
   font-style: bold;
 }
+
 .animate-fade-in {
   animation: fade-in 1s ease-out;
 }
@@ -25,6 +30,11 @@ h1{
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }

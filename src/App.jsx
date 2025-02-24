@@ -17,11 +17,26 @@ function App() {
 
         <Routes>
           <Route path="responsive-navbar-iceico-task/" element={<Home />} />
-          <Route path="responsive-navbar-iceico-task/about" element={<About />} />
-          <Route path="responsive-navbar-iceico-task/contact" element={<Contact />} />
-          <Route path="responsive-navbar-iceico-task/web-dev" element={<WebDev />} />
-          <Route path="responsive-navbar-iceico-task/mobile-dev" element={<MobileDev />} />
-          <Route path="responsive-navbar-iceico-task/cloud" element={<Cloud />} />
+          <Route
+            path="responsive-navbar-iceico-task/about"
+            element={<About />}
+          />
+          <Route
+            path="responsive-navbar-iceico-task/contact"
+            element={<Contact />}
+          />
+          <Route
+            path="responsive-navbar-iceico-task/web-dev"
+            element={<WebDev />}
+          />
+          <Route
+            path="responsive-navbar-iceico-task/mobile-dev"
+            element={<MobileDev />}
+          />
+          <Route
+            path="responsive-navbar-iceico-task/cloud"
+            element={<Cloud />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

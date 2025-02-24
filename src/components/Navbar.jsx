@@ -9,8 +9,14 @@ const links = [
   {
     name: "Services",
     subLinks: [
-      { path: "responsive-navbar-iceico-task/web-dev", name: "Web Development" },
-      { path: "responsive-navbar-iceico-task/mobile-dev", name: "Mobile Development" },
+      {
+        path: "responsive-navbar-iceico-task/web-dev",
+        name: "Web Development",
+      },
+      {
+        path: "responsive-navbar-iceico-task/mobile-dev",
+        name: "Mobile Development",
+      },
       { path: "responsive-navbar-iceico-task/cloud", name: "Cloud Services" },
     ],
   },
@@ -47,7 +53,10 @@ const Navbar = () => {
             </button>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: isServicesOpen ? 1 : 0, y: isServicesOpen ? 0 : -10 }}
+              animate={{
+                opacity: isServicesOpen ? 1 : 0,
+                y: isServicesOpen ? 0 : -10,
+              }}
               className="absolute top-8 left-0 bg-white shadow-lg rounded-lg py-2 min-w-[200px]"
             >
               {link.subLinks.map((subLink) => (
@@ -66,7 +75,9 @@ const Navbar = () => {
             key={link.path}
             to={link.path}
             className={({ isActive }) =>
-              `text-white hover:text-purple-200 ${isActive ? "border-b-2 border-white" : ""}`
+              `text-white hover:text-purple-200 ${
+                isActive ? "border-b-2 border-white" : ""
+              }`
             }
           >
             {link.name}
@@ -91,10 +102,18 @@ const Navbar = () => {
                 className="w-full flex justify-between items-center py-2 text-gray-800 hover:bg-gray-50 px-2"
               >
                 {link.name}
-                <FiChevronDown className={`transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
+                <FiChevronDown
+                  className={`transition-transform ${
+                    isServicesOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
               {isServicesOpen && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="pl-4">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="pl-4"
+                >
                   {link.subLinks.map((subLink) => (
                     <NavLink
                       key={subLink.path}
@@ -114,7 +133,9 @@ const Navbar = () => {
               to={link.path}
               onClick={closeMobileMenu}
               className={({ isActive }) =>
-                `block py-2 px-2 text-gray-800 hover:bg-gray-50 rounded ${isActive ? "bg-gray-100" : ""}`
+                `block py-2 px-2 text-gray-800 hover:bg-gray-50 rounded ${
+                  isActive ? "bg-gray-100" : ""
+                }`
               }
             >
               {link.name}
@@ -129,8 +150,14 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <motion.div whileHover={{ scale: 1.1 }} className="flex-shrink-0 text-white font-bold text-2xl">
-            <Link to="responsive-navbar-iceico-task/" className="flex items-center">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex-shrink-0 text-white font-bold text-2xl"
+          >
+            <Link
+              to="responsive-navbar-iceico-task/"
+              className="flex items-center"
+            >
               <span className="mr-2">🚀</span>
               TechSolutions
             </Link>

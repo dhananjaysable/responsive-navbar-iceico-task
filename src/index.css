@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -11,9 +16,7 @@
   }
 }
 
-body {
-  overflow-x: hidden;
-}
+
 
 h1 {
   text-align: center;

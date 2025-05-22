@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Activity } from "lucide-react";
 
 const links = [
   { path: "responsive-navbar-iceico-task/", name: "Home" },
@@ -159,7 +160,7 @@ const Navbar = () => {
               className="flex items-center space-x-2"
             >
               <span className="text-lg sm:text-xl md:text-2xl no-underline">
-                🚀
+                <Activity />
               </span>
               <span className="font-bold text-base sm:text-lg md:text-2xl no-underline text-white">
                 TechSolutions

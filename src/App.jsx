@@ -8,6 +8,8 @@ import Contact from "./pages/Contact";
 import WebDev from "./pages/WebDev";
 import MobileDev from "./pages/MobileDev";
 import Cloud from "./pages/Cloud";
+import TermsAndConditions from "./pages/termandconditions";
+
 
 function App() {
   return (
@@ -36,6 +38,10 @@ function App() {
           <Route
             path="responsive-navbar-iceico-task/cloud"
             element={<Cloud />}
+          />
+          <Route
+            path="responsive-navbar-iceico-task/terms-and-conditions"
+            element={<TermsAndConditions />}
           />
           <Route path="*" element={<NotFound />} />
         </Routes>

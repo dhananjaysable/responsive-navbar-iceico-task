@@ -151,20 +151,15 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="flex-shrink-0 text-white font-bold text-2xl"
-          >
+          <motion.div whileHover={{ scale: 1.1 }} className="flex-shrink-0">
             <Link
               to="responsive-navbar-iceico-task/"
-              className="flex items-center no-underline space-x-2 text-white"
+              className="flex items-center space-x-2 text-white font-bold text-base sm:text-lg md:text-2xl hover:no-underline no-underline"
             >
               <span className="text-lg sm:text-xl md:text-2xl">
                 <Activity />
               </span>
-              <span className="font-bold text-base sm:text-lg md:text-2xl no-underline text-white">
-                TechSolutions
-              </span>
+              <span>TechSolutions</span>
             </Link>
           </motion.div>
           <DesktopMenu />

@@ -157,9 +157,9 @@ const Navbar = () => {
           >
             <Link
               to="responsive-navbar-iceico-task/"
-              className="flex items-center space-x-2"
+              className="flex items-center no-underline space-x-2 text-white"
             >
-              <span className="text-lg sm:text-xl md:text-2xl no-underline">
+              <span className="text-lg sm:text-xl md:text-2xl">
                 <Activity />
               </span>
               <span className="font-bold text-base sm:text-lg md:text-2xl no-underline text-white">

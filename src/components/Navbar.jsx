@@ -158,7 +158,7 @@ const Navbar = () => {
               to="responsive-navbar-iceico-task/"
               className="flex items-center"
             >
-              <span className="mr-2">🚀</span>
+              <span className="mr-2 sm:text-xl">🚀</span>
               TechSolutions
             </Link>
           </motion.div>

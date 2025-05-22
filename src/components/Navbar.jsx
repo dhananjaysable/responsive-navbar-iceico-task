@@ -156,10 +156,12 @@ const Navbar = () => {
           >
             <Link
               to="responsive-navbar-iceico-task/"
-              className="flex items-center"
+              className="flex items-center space-x-2"
             >
-              <span className="mr-2 sm:text-lg">🚀</span>
-              TechSolutions
+              <span className="text-lg sm:text-xl md:text-2xl">🚀</span>
+              <span className="font-bold text-base sm:text-lg md:text-2xl">
+                TechSolutions
+              </span>
             </Link>
           </motion.div>
           <DesktopMenu />

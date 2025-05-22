@@ -1,1 +1,1 @@
-[Check out now](https://dhananjaysable370.github.io/responsive-navbar-iceico-task/)
+[Check out now](https://dhananjaysable.github.io/responsive-navbar-iceico-task/)

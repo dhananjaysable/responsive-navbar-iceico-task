@@ -48,7 +48,7 @@ const Navbar = () => {
             onMouseEnter={() => setIsServicesOpen(true)}
             onMouseLeave={() => setIsServicesOpen(false)}
           >
-            <button className="text-white hover:text-purple-200 flex items-center">
+            <button className="text-white no-underline hover:no-underline hover:text-purple-200 flex items-center">
               {link.name}
               <FiChevronDown className="ml-1" />
             </button>
@@ -64,7 +64,8 @@ const Navbar = () => {
                 <NavLink
                   key={subLink.path}
                   to={subLink.path}
-                  className="block px-4 py-2 text-gray-800 hover:bg-purple-50"
+                  className="block px-4 py-2 text-gray-800 hover:bg-purple-50 no-underline hover:no-underline"
+                  style={{ textDecoration: "none" }}
                 >
                   {subLink.name}
                 </NavLink>
@@ -76,10 +77,11 @@ const Navbar = () => {
             key={link.path}
             to={link.path}
             className={({ isActive }) =>
-              `text-white hover:text-purple-200 ${
+              `text-white no-underline hover:no-underline hover:text-purple-200 ${
                 isActive ? "border-b-2 border-white" : ""
               }`
             }
+            style={{ textDecoration: "none" }}
           >
             {link.name}
           </NavLink>
@@ -120,7 +122,8 @@ const Navbar = () => {
                       key={subLink.path}
                       to={subLink.path}
                       onClick={closeMobileMenu}
-                      className="block py-2 text-gray-600 hover:bg-gray-50 rounded px-2"
+                      className="block py-2 text-gray-600 hover:bg-gray-50 rounded px-2 no-underline hover:no-underline"
+                      style={{ textDecoration: "none" }}
                     >
                       {subLink.name}
                     </NavLink>
@@ -134,10 +137,11 @@ const Navbar = () => {
               to={link.path}
               onClick={closeMobileMenu}
               className={({ isActive }) =>
-                `block py-2 px-2 text-gray-800 hover:bg-gray-50 rounded ${
+                `block py-2 px-2 text-gray-800 hover:bg-gray-50 rounded no-underline hover:no-underline ${
                   isActive ? "bg-gray-100" : ""
                 }`
               }
+              style={{ textDecoration: "none" }}
             >
               {link.name}
             </NavLink>
@@ -154,7 +158,8 @@ const Navbar = () => {
           <motion.div whileHover={{ scale: 1.1 }} className="flex-shrink-0">
             <Link
               to="responsive-navbar-iceico-task/"
-              className="flex items-center space-x-2 text-white font-bold text-base sm:text-lg md:text-2xl hover:no-underline no-underline"
+              className="flex items-center space-x-2 text-white font-bold text-base sm:text-lg md:text-2xl no-underline hover:no-underline"
+              style={{ textDecoration: "none" }}
             >
               <span className="text-lg sm:text-xl md:text-2xl">
                 <Activity />
